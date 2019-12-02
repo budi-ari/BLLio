@@ -1,7 +1,7 @@
 # BLLio
 
 - Budi Ari K.
-- Eko Pujianto
+- Eko Pujianto.
 - Feriyan Yusuf A.
 ---
 ## NOTE
