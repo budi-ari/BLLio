@@ -2,7 +2,7 @@
 $host ="Localhost";
 $user = "root";
 $password = "";
-$database = "admin_bllio";
+$database = "bllio";
 
 $con = mysqli_connect($host,$user,$password,$database);
 

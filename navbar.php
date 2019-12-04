@@ -2,11 +2,12 @@
    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
        <div class="container">
            <h3><i class="fas fa-shopping-bag text-dark mr-2"></i></h3>
-           <a class="navbar-brand font-weight-bold" href="#beranda">BLLio</a>
+           <a href="#beranda">
+               <img src="img/bllio.png" alt="logo-bllio" style="width:80px;">
+           </a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
            </button>
-
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto mr-4">
                    <li class="nav-item">
