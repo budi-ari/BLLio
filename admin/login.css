@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .form-container {
     position: absolute;
     background-color: whitesmoke;
@@ -9,4 +13,16 @@
 
 button {
     position: absolute;
+}
+
+nav {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar {
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
 }
