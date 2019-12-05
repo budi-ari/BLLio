@@ -1,3 +1,9 @@
+<?php
+include "db/config.php";
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en" id="beranda">
 
@@ -13,7 +19,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="produk/produk.html">
 </head>
 
 <body>
@@ -24,12 +29,17 @@
     <div class="container" id="contenthome">
         <div id="carouselHome" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ul class="carousel-indicators">
+            <!-- <ul class="carousel-indicators">
                 <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselHome" data-slide-to="1"></li>
                 <li data-target="#carouselHome" data-slide-to="2"></li>
-            </ul>
+                <li data-target="#carouselHome" data-slide-to="3"></li>
+            </ul> -->
             <!-- The slideshow -->
+            <?php 
+            
+            ?>
+
             <div class="carousel-inner" id="myslide">
                 <div class="carousel-item active">
                     <img src="img/carousel/carousel1.jpg" alt="slide1" class="img-fluid rounded mx-auto d-block">
@@ -39,6 +49,9 @@
                 </div>
                 <div class="carousel-item">
                     <img src="img/carousel/carousel3.jpg" alt="slide3" class="img-fluid rounded mx-auto d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/carousel5.png" alt="slide4" class="img-fluid rounded mx-auto d-block">
                 </div>
             </div>
             <!-- Left and right controls -->
