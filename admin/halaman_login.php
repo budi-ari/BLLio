@@ -15,7 +15,7 @@
 
 <body>
    <!-- navbar -->
-   <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray" >
         <div class="container">
             <h3><i class="fas fa-shopping-bag text-dark mr-2"></i></h3>
             <a class="navbar-brand font-weight-bold" href="#beranda">
