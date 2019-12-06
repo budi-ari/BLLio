@@ -3,7 +3,7 @@
        <div class="container">
            <h3><i class="fas fa-shopping-bag text-dark mr-2"></i></h3>
            <a href="#beranda">
-               <img src="img/bllio.png" alt="logo-bllio" style="width:80px;">
+               <img src="img/bllio.png" alt="logo-bllio" style="width:90px;">
            </a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>

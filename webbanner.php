@@ -1,31 +1,4 @@
-<?php
-include('db/config.php');
-if (isset($_POST['submit']) ) {
-    if (!isset($_FILES['image']['tmp_img'])) {
-        echo '<span style= "color:red"><b><u> <i> PILIH FILE GAMBAR!</i> </u> </b> </span>';
-    } else {
-        $file_name = $_FILES['image']['name'];
-        $file_size = $_FILES['image']['size'];
-        $file_type = $_FILES['image']['type'];
-
-        if ($file_size < 2048000 and ($file_type == 'image/jpeg' or $file_type == 'image/png') ) {
-            $image =  addslashes(file_get_contents($_FILES['image'][tmp_img]));
-            $sql = ;
-            mysqli_query($con,$sql);
-        } else {
-            # code...
-        }
-        
-    }
-    
-
-} else {
-    # code...
-}
-
-
-?>
-
+<?php include "uploadBanner.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,15 +14,15 @@ if (isset($_POST['submit']) ) {
 </head>
 
 <body>
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" action="uploadBanner.php" enctype="multipart/form-data">
         <table>
             <tr>
                 <td>Nama</td>
-                <td> <input type="text" placeholder="isikan nama banner" name="name"> </td>
+                <td> <input type="text" placeholder="isikan nama banner" name="nm_banner"/> </td>
             </tr>
             <tr>
                 <td>Pilih Gambar</td>
-                <td> <input type="file" name="image" required /> </td>
+                <td> <input type="file" name="gambar"/> </td>
             </tr>
             <tr>
                 <td>Descriptions</td>
@@ -67,4 +40,7 @@ if (isset($_POST['submit']) ) {
 
 </body>
 
+
+<!-- hanya contoh form yang bisa di masukan ke halaman admin.
+yang paling di perhatikan adalah pada tag "<form></form>" -->
 </html>

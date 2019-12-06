@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Des 2019 pada 11.37
+-- Waktu pembuatan: 06 Des 2019 pada 20.08
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.9
 
@@ -144,6 +144,30 @@ CREATE TABLE `product` (
   `description` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `web_banner`
+--
+
+CREATE TABLE `web_banner` (
+  `id` int(11) NOT NULL,
+  `nm_banner` varchar(25) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `size` int(11) NOT NULL,
+  `type` varchar(25) NOT NULL,
+  `isactive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `web_banner`
+--
+
+INSERT INTO `web_banner` (`id`, `nm_banner`, `image`, `size`, `type`, `isactive`) VALUES
+(1, 'banner 1', 'carousel1.jpg', 91052, 'image/jpeg', 1),
+(2, 'banner 2', 'carousel2.jpg', 152900, 'image/jpeg', 1),
+(3, 'banner 3', 'carousel3.jpg', 130908, 'image/jpeg', 1);
+
 --
 -- Indexes for dumped tables
 --
@@ -204,6 +228,12 @@ ALTER TABLE `product`
   ADD UNIQUE KEY `sku` (`sku`);
 
 --
+-- Indeks untuk tabel `web_banner`
+--
+ALTER TABLE `web_banner`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -242,6 +272,12 @@ ALTER TABLE `marketplace`
 --
 ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `web_banner`
+--
+ALTER TABLE `web_banner`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

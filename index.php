@@ -25,55 +25,17 @@ include "db/config.php";
     <?php
     include "navbar.php";
     ?>
-
     <div class="container" id="contenthome">
-        <div id="carouselHome" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <!-- <ul class="carousel-indicators">
-                <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselHome" data-slide-to="1"></li>
-                <li data-target="#carouselHome" data-slide-to="2"></li>
-                <li data-target="#carouselHome" data-slide-to="3"></li>
-            </ul> -->
-            <!-- The slideshow -->
-            <?php 
-            
-            ?>
-
-            <div class="carousel-inner" id="myslide">
-                <div class="carousel-item active">
-                    <img src="img/carousel/carousel1.jpg" alt="slide1" class="img-fluid rounded mx-auto d-block">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel/carousel2.jpg" alt="slide2" class="img-fluid rounded mx-auto d-block">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel/carousel3.jpg" alt="slide3" class="img-fluid rounded mx-auto d-block">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel/carousel5.png" alt="slide4" class="img-fluid rounded mx-auto d-block">
-                </div>
-            </div>
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#carouselHome" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselHome" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-
+        <?php
+        include "carousel.php";
+        ?>
         <?php
         include "produk.php";
         ?>
-
         <?php
         include "popup.php";
         ?>
     </div>
-
-
-
 
     <!-- footer -->
     <footer>
