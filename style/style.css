@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .card p {
     margin-top: -10px;
     margin-bottom: 1px;
@@ -24,33 +28,32 @@ footer {
     background-color: #130f40;
 }
 
+
 /* warna pada navbar */
-.navbar-light .navbar-nav .nav-link{
+
+.navbar-light .navbar-nav .nav-link {
     color: white;
 }
 
-.navbar{
-    box-shadow:  1px 2px 20px  rgba(0, 0, 0, .5);
+.navbar {
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
 }
 
 #myslide {
     margin-top: 70px;
-    box-shadow:  1px 2px 20px  rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
     padding: 10px;
     border-radius: 10px;
 }
 
 #listproduct {
     position: relative;
-    box-shadow:  1px 2px 20px  rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, .5);
     padding: 15px;
     border-radius: 10px;
 }
 
-#produkKami{
+#produkKami {
     color: white;
 }
 
-/* #iconhome{
-    box-shadow:  1px 2px 20px  rgba(0, 0, 0, .5);
-} */

@@ -18,7 +18,8 @@
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray">
         <div class="container">
-            <h4><i class="fas fa-shopping-bag text-dark mr-2"></i> BLLio - admin</h4>
+            <h4><i class="fas fa-shopping-bag text-dark mr-2"></i>
+            <img src="../../img/bllio.png" alt="logo-bllio" style="width:80px;"></h4>
             </div>
         </div>
     </nav>

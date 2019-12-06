@@ -8,25 +8,24 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 
     <title>BLLio - Admin</title>
 </head>
 
 <body>
    <!-- navbar -->
-   <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray" >
         <div class="container">
             <h3><i class="fas fa-shopping-bag text-dark mr-2"></i></h3>
-            <a class="navbar-brand font-weight-bold" href="#beranda">BLLio - Admin</a>
+            <a class="navbar-brand font-weight-bold" href="#beranda">
+                <img src="../img/bllio.png" alt="logo-bllio" style="width:80px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login/tambah_admin.php">Tambah Admin <span class="sr-only">(current)</span></a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ubah <span class="sr-only">(current)</span></a>
                     </li>
@@ -57,10 +56,10 @@
     <div class="row mt-5 no-gutters">
         <div class="col-md-2 bg-light" style="backgroung-color: bisque;">
             <div class="list-group list-group-flush p-1 pt-3">    
-                <a href="#" class="list-group-item list-group-item-action active font-weight-bold"> <i class="fas fa-list mr-2"></i>KATEGORI PRODUK</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Buku</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> IT/Komputer</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Alat Peraga Pendidikan</a>
+                <a href="#" class="list-group-item list-group-item-action active font-weight-bold"> <i class="fas fa-list mr-2"></i>OPSI ADMIN</a>
+                <a href="login/tambah_admin.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Tambah</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Ubah</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Hapus</a>
             </div>
         </div>
 
