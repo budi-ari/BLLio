@@ -17,36 +17,30 @@
    <!-- navbar -->
    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray" >
         <div class="container">
-            <h3><i class="fas fa-shopping-bag text-dark mr-2"></i></h3>
             <a class="navbar-brand font-weight-bold" href="#beranda">
-                <img src="../img/bllio.png" alt="logo-bllio" style="width:80px;"></a>
+                <img src="../img/bllio.png" alt="logo-bllio" style="width:100px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ubah <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.php">Lihat Halaman User <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <div class="icon mt-2 ml-3">
-                    <h5>
-                    <a href="login/logout.php" class="logout"><i class="fas fa-sign-out-alt text-dark ml-3" href="" data-toggle="tootip" title="Logout">
+                </form>                    
+                </ul>
+                <div class="dropdown ml-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <?php
-                    include "login/cek_login.php";
-                    echo $_SESSION["session_nama"];
+                        include "login/cek_login.php";
+                        echo $_SESSION["session_nama"];
                     ?>
-                    </i></a>
-                    </h5>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="login/logout.php">Logout</a>
                 </div>
+            </div>
             </div>
         </div>
     </nav>
@@ -55,16 +49,28 @@
     <!--pembagian kolom data -->
     <div class="row mt-5 no-gutters">
         <div class="col-md-2 bg-light" style="backgroung-color: bisque;">
-            <div class="list-group list-group-flush p-1 pt-3">    
-                <a href="#" class="list-group-item list-group-item-action active font-weight-bold"> <i class="fas fa-list mr-2"></i>OPSI ADMIN</a>
-                <a href="login/tambah_admin.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Tambah</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Ubah</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Hapus</a>
-            </div>
+        <p class="mt-4 ml-2">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Opsi Admin 
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <div class="list-group list-group-flush p-1 pt-2">    
+                <a href="../index.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Lihat Tampilan User</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Admin</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Kategori</a>
+            </div>   
+        </div>
+        </div>
+           
         </div>
 
         <div class="col-md-10">
-        <!--nanti isinya database ada di sini semua -->
+            <div class="mt-3 ml-2 mr-1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam provident numquam dignissimos facilis nam molestias voluptas autem, iste, quasi doloribus quas voluptates nulla alias iure consectetur reiciendis error? Beatae, aliquam!</p>
+            </div>
         </div>
     </div>
         <!-- akhir pembagian kolom data -->

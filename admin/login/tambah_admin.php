@@ -44,7 +44,7 @@
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Tambah</button>
+                    <a href=""><button type="submit" class="btn btn-primary">Tambah</button></a>
                     <br><br>
                     <a class="btn btn-danger" href="../halaman_login.php">Batal</a>
                 </form>

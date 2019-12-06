@@ -13,7 +13,7 @@ if($row["username"] == $username and $password == $row["password"] ){
 	$_SESSION["session_username"] = $row["username"];
 	$_SESSION["session_password"] = $row["password"];
 	$_SESSION["session_nama"] = $row["nama"];
-    header("Location: halaman_login.php");
+    header("Location: halaman_admin.php");
     //header("Location: ../index.php");
 }else{
 	echo "Login Gagal";
