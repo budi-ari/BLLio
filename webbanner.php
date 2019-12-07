@@ -1,4 +1,4 @@
-<?php include "uploadBanner.php";?>
+<?php include "DBUploadBanner.php";?>
 <!doctype html>
 <html lang="en" id="beranda">
 
@@ -23,7 +23,8 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <form class="form-container" action="uploadBanner.php" method="POST" enctype="multipart/form-data">
+                <form class="form-container" action="DBUploadBanner.php" method="POST" enctype="multipart/form-data">
+                    <h3 class="text-center">Upload Gambar</h3>
                     <div class="form-group">
                         <table>
                             <tr>
@@ -41,8 +42,10 @@
                             <tr>
                                 <td colspan="2">
                                     <div class="text-center">
-                                    <button type="submit" name="submit">sumbit</button>
-                                    </div>    
+                                    <button type="submit" name="submit">submit</button>
+                                    </div>
+                                    <a href="admin/halaman_admin.php"><button type="button">gak jadi</button>
+</a>
                                 </td>
                             </tr>
                         </table>

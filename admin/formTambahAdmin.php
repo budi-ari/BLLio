@@ -35,6 +35,9 @@
                         <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
                     </div>
+                    <div class="text-center">
+                        <a href="halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
+                    </div>
                     <button type="submit" class="btn btn-primary">Tambah</button>
                 </form>
             </div>
