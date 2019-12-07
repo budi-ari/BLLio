@@ -22,21 +22,39 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <form class="form-container" action="DBLogin.php" method="POST">
-                    <div class="form-group">
-                    <h3 class="text-center">
-                    <img src="../img/bllio.png" alt="logo-bllio" style="width:130px;"></h3>
-                    <label for="exampleInputEmail1">Username</label>
-                    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
-                    <small id="emailHelp" class="form-text text-muted">Pastikan Username Anda Benar!</small>
+            <form class="form-container" action="DB_admin/DBUpdate.php" method="POST">
+            <h3 class="text-center"> Ubah Data Admin</h3>    
+                
+                <?php include "login/config.php";
+ 
+                if(isset($_GET['id'])){ 
+                    $sql=mysqli_query($con, "select * from admin where id ='$_GET[id]'");
+                    $r=mysqli_fetch_array($sql);
+                    ?>
+
+                    <div class="form-group">                    
+                    <label for="kode">ID Admin</label>
+                    <input type="text" name="id" class="form-control" id="kode" placeholder="ID Admin"
+                    value=<?php echo $r['id'];?> disabled>
+                    <label for="nama">Nama</label>
+                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama"
+                    value=<?php echo $r['nama'];?>>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Username"
+                    value=<?php echo $r['username'];?>>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password"
+                        value=<?php echo $r['password'];?>>
+                        <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary">Tambah</button>
                 </form>
             </div>
+                <?php 
+                }
+                ?>
             <div class="col-md-4"></div>
         </div>    
     </section>

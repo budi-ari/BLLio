@@ -3,50 +3,39 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BLLio-admin</title>
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../login.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
 
     <title>BLLio-admin</title>
 </head>
 
 <body>
-
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray">
-        <div class="container">
-            <h4><i class="fas fa-shopping-bag text-dark mr-2"></i>
-            <img src="../../img/bllio.png" alt="logo-bllio" style="width:80px;"></h4>
-            </div>
-        </div>
-    </nav>
-    <!-- akhir navbar -->
     <!-- form login -->
     <section class="container">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <form class="form-container" action="login.php" method="POST">
+                <form class="form-container" action="DB_admin/DBInsert.php" method="POST">
                     <div class="form-group">
-                        <h3 class="text-center">TAMBAH ADMIN</h3>
-                        <label for="exampleInputEmail1">Nama</label>
-                        <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama">
+                    <h3 class="text-center"> Tambah Admin</h3>
+                    <label for="nama">Nama</label>
+                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Username">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Username</label>
-                        <input type="text" name="username" class="form-control" id="username" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
                     </div>
-                    <a href=""><button type="submit" class="btn btn-primary">Tambah</button></a>
-                    <br><br>
-                    <a class="btn btn-danger" href="../halaman_login.php">Batal</a>
+                    <button type="submit" class="btn btn-primary">Tambah</button>
                 </form>
             </div>
             <div class="col-md-4"></div>

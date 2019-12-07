@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BLLio</title>
+    <title>BLLio-admin</title>
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -50,7 +50,7 @@
 
     <!--pembagian kolom data -->
     <div class="row mt-5 no-gutters">
-        <div class="col-md-2 bg-light" style="backgroung-color: bisque;">
+        <div class="col-md-2 bg-light">
         <p class="mt-4 ml-2">
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Opsi Admin 
@@ -60,9 +60,12 @@
         <div class="card card-body">
             <div class="list-group list-group-flush p-1 pt-2">    
                 <a href="../index.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Lihat Tampilan User</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Admin</a>
+                <a href="#tabelAdmin" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Admin</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Kategori</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Gambar</a>
+                <a href="../webbanner.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Edit Carousoll</a>
+                
             </div>   
         </div>
         </div>
@@ -71,7 +74,9 @@
 
         <div class="col-md-10">
             <div class="mt-3 ml-2 mr-1">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam provident numquam dignissimos facilis nam molestias voluptas autem, iste, quasi doloribus quas voluptates nulla alias iure consectetur reiciendis error? Beatae, aliquam!</p>
+            <?php
+            include "formAdmin.php";
+            ?>
             </div>
         </div>
     </div>
