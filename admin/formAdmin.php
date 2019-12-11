@@ -28,7 +28,7 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
                 ?>
                 <td>
                 <a href=<?php echo'formUpdateAdmin.php?id=' . $r['id'] ?>>
-                <button type='button' class='btn btn-primary'> Edit </button></a>
+                <button type='button' class='btn btn-primary'> Ubah </button></a>
                 <a href=<?php echo 'DB_admin/DBDelete.php?id=' . $r['id'] ?>>
                 <button type='button' class='btn btn-danger'> Hapus </button></a>
                 </td>            

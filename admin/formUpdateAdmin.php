@@ -21,7 +21,7 @@
     <section class="container">
         <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-4">
+            <div class="col-md-6">
             <form class="form-container" action="DB_admin/DBUpdate.php" method="POST">
             <h3 class="text-center"> Ubah Data Admin</h3>    
                 
@@ -49,13 +49,16 @@
                         value=<?php echo $r['password'];?>>
                         <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Tambah</button>
+                    <div class="text-center">
+                        <a href="halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ubah</button>
                 </form>
             </div>
                 <?php 
                 }
                 ?>
-            <div class="col-md-4"></div>
+            <div class="col-md-3"></div>
         </div>    
     </section>
     <!-- akhir form login -->

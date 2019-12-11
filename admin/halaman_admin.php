@@ -64,7 +64,7 @@
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Kategori</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Gambar</a>
-                <a href="../webbanner.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Edit Carousoll</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Tambah Carousoll</a>
                 
             </div>   
         </div>
@@ -76,6 +76,12 @@
             <div class="mt-3 ml-2 mr-1">
             <?php
             include "formAdmin.php";
+            ?>
+            </div>
+
+            <div class="mt-3 ml-2 mr-1">
+            <?php
+            include "../carouselView.php";
             ?>
             </div>
         </div>

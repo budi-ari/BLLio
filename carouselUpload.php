@@ -1,4 +1,4 @@
-<?php include "DBUploadBanner.php";?>
+<?php include "carouselDB.php";?>
 <!doctype html>
 <html lang="en" id="beranda">
 
@@ -23,13 +23,13 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <form class="form-container" action="DBUploadBanner.php" method="POST" enctype="multipart/form-data">
-                    <h3 class="text-center">Upload Gambar</h3>
+                <form class="form-container" action="carouselDB.php" method="POST" enctype="multipart/form-data">
+                    <h3 class="text-center">Upload Carousel</h3>
                     <div class="form-group">
                         <table>
                             <tr>
                                 <td>Nama</td>
-                                <td> <input type="text" placeholder="isikan nama banner" name="nm_banner"/> </td>
+                                <td> <input type="text" placeholder="isikan nama Carousel" name="nm_banner"/> </td>
                             </tr>
                             <tr>
                                 <td>Pilih Gambar</td>
@@ -44,8 +44,7 @@
                                     <div class="text-center">
                                     <button type="submit" name="submit">submit</button>
                                     </div>
-                                    <a href="admin/halaman_admin.php"><button type="button">gak jadi</button>
-</a>
+                                    <a href="admin/halaman_admin.php"><button type="button">gak jadi</button></a>
                                 </td>
                             </tr>
                         </table>
