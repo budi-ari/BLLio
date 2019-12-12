@@ -33,7 +33,9 @@
                             </tr>
                             <tr>
                                 <td>Pilih Gambar</td>
-                                <td> <input type="file" name="gambar"/> </td>
+                                <td> <input type="file" name="gambar"/> 
+                                <small>Ukuran ideal 1110x450</small>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Descriptions</td>

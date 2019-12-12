@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
             values('$nm_banner', '$file_name', '$file_size', '$file_type', '1') ";
             mysqli_query($con, $sql);
             move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_dir.$_FILES['gambar']['name']);
-            header("location:index.php");
+            header("location:admin/halaman_admin.php");
             echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
         } else {
             echo '<span style="color:red"><b><u><i>Ukuruan File / Tipe File Tidak Sesuai</i></u></b></span>';
