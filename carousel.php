@@ -13,12 +13,12 @@ $query = mysqli_query($con, $sql);
             if ($no == 0) {
                 ?>
                 <div class="carousel-item active">
-                    <img src="img/banner/<?php echo $result['image']; ?>" alt="slide1" class="img-fluid rounded mx-auto d-block">
+                    <img src="img/banner/<?php echo $result['image']; ?>" alt="slide1" class="img-fluid rounded mx-auto d-block" style="width:1110px; height:450px;">
                 </div>
             <?php } else {
                     ?>
                 <div class="carousel-item">
-                    <img src="img/banner/<?php echo $result['image']; ?>" alt="slide1" class="img-fluid rounded mx-auto d-block">
+                    <img src="img/banner/<?php echo $result['image']; ?>" alt="slide1" class="img-fluid rounded mx-auto d-block" style="width:1110px; height:450px;">
                 </div>
         <?php
             }
