@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="beranda">
 
 <head>
     <!-- Required meta tags -->
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <!-- <link rel="stylesheet" type="text/css" href="../style/style.css"> -->
 
     
 </head>
@@ -64,7 +64,7 @@
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Kategori</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Gambar</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Tambah Carousoll</a>
+                <a href="#tabelCarousel" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Carousoll</a>
                 
             </div>   
         </div>
@@ -81,7 +81,7 @@
 
             <div class="mt-3 ml-2 mr-1">
             <?php
-            include "../carouselView.php";
+            include "../carousel/carouselView.php";
             ?>
             </div>
         </div>
