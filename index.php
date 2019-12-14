@@ -21,7 +21,7 @@
     ?>
     <div class="container" id="contenthome">
         <?php
-        include "carousel.php";
+        include "carousel/carousel.php";
         ?>
         <?php
         include "produk.php";

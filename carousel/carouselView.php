@@ -1,11 +1,11 @@
 <?php
-include "db/config.php";
+include "../db/config.php";
 $tampilCarousel = mysqli_query($con, "Select * from web_banner");
 ?>
 
 <div class="container">
     <h3>Tabel Carousel</h3>
-    <a href="../carouselUpload.php">
+    <a href="../carousel/carouselUpload.php">
     <button type="button" class="btn btn-secondary">Tambah Carousel</button></a>
     <table class="table mt-2" id="tabelCarousel">
         <thead>
@@ -31,9 +31,9 @@ $tampilCarousel = mysqli_query($con, "Select * from web_banner");
                 </td>
                 
                 <td>
-                <a href="#">
+                <a href=<?php echo'../carousel/carouselEdit.php?id=' . $r['id'] ?>>
                 <button type='button' class='btn btn-primary'> Ubah </button></a>
-                <a href="#">
+                <a href=<?php echo '../carousel/carouselDelete.php?id=' . $r['id'] ?>>
                 <button type='button' class='btn btn-danger'> Hapus </button></a>
                 </td>            
                 </tr>
