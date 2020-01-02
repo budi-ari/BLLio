@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="../style/style.css"> -->
-
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    
     
 </head>
 
@@ -29,11 +29,11 @@
                 <ul class="navbar-nav ml-auto mr-4">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                 </form>                    
                 </ul>
                 <div class="dropdown ml-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <?php
                         include "login/cek_login.php";
                         echo $_SESSION["session_nama"];
@@ -61,7 +61,7 @@
             <div class="list-group list-group-flush p-1 pt-2">    
                 <a href="../index.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Lihat Tampilan User</a>
                 <a href="#tabelAdmin" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Admin</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
+                <a href="#tabelBarang" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Kategori</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Gambar</a>
                 <a href="#tabelCarousel" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Carousoll</a>
@@ -82,6 +82,12 @@
             <div class="mt-3 ml-2 mr-1">
             <?php
             include "../carousel/carouselView.php";
+            ?>
+            </div>
+
+            <div class="mt-3 ml-2 mr-1">
+            <?php
+            include "../barang/barangView.php";
             ?>
             </div>
         </div>

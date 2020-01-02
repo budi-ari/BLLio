@@ -7,6 +7,11 @@ $tampilCarousel = mysqli_query($con, "Select * from web_banner");
     <h3>Tabel Carousel</h3>
     <a href="../carousel/carouselUpload.php">
     <button type="button" class="btn btn-secondary">Tambah Carousel</button></a>
+    <form class="form-inline my-2 my-lg-0" method="GET" action="">
+    
+      <input class="form-control mr-sm-2 mt-sm-1" type="text" name="cari" placeholder="cari" aria-label="cari">
+      <button class="btn btn-outline-primary my-2 my-sm-0 mt-sm-1" type="submit" id="cari">Cari</button>      
+    </form>
     <table class="table mt-2" id="tabelCarousel">
         <thead>
             <tr>
@@ -18,7 +23,7 @@ $tampilCarousel = mysqli_query($con, "Select * from web_banner");
         </thead>
         <tbody>
 <!-- data table -->
-<?php
+            <?php
             $no=1; 
             while($r=mysqli_fetch_array($tampilCarousel)){
                 echo"

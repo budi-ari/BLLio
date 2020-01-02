@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BLLio-admin</title>
+    <title>BLLio-barang</title>
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="../admin/login.css">
 
-    <title>BLLio-admin</title>
+
 </head>
 
 <body>
@@ -22,25 +22,41 @@
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <form class="form-container" action="DB_admin/DBInsert.php" method="POST">
+                <form class="form-container" action="barangDBEdit.php" method="POST">
                     <div class="form-group">
-                    <h3 class="text-center"> Tambah Admin</h3>
-                    <label for="nama">Nama</label>
-                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                    <h3 class="text-center"> Ubah Data Barang</h3>
+
+                    <?php include "../db/config.php"; 
+                    if(isset($_GET['id'])){ 
+                        $sql=mysqli_query($con, "select * from product where id ='$_GET[id]'");
+                        $r=mysqli_fetch_array($sql);
+                    ?>
+
+                    <label for="sku">SKU</label>
+                    <input type="text" name="sku" class="form-control" id="sku" value=<?php echo $r['sku'];?> readonly>
+                    <label for="nama">Nama Produk</label>
+                    <input type="text" name="nama" class="form-control" id="nama" value=<?php echo $r['nm_product'];?>>
+                    <label for="brand">Brand</label>
+                    <input type="text" name="brand" class="form-control" id="brand" value=<?php echo $r['brand'];?>>
+                    <label for="waranty">Garansi</label>
+                    <input type="text" name="waranty" class="form-control" id="waranty" value=<?php echo $r['waranty'];?>>
+                    <label for="stock">Stock</label>
+                    <input type="text" name="stock" class="form-control" id="stock" value=<?php echo $r['stock'];?>>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                        <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
+                        <label for="exampleFormControlTextarea1">Deskripsi</label>
+                        <textarea class="form-control" id="description" rows="3">value=<?php echo $r['description'];?></textarea>
                     </div>
+
                     <div class="text-center">
-                        <a href="halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
+                        <a href="../admin/halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
                     </div>
-                    <button type="submit" id="submit" class="btn btn-primary">Tambah</button>
+                    <button type="submit" class="btn btn-primary">Ubah</button>
                 </form>
             </div>
+            <?php 
+                }
+                ?>
             <div class="col-md-4"></div>
         </div>    
     </section>
@@ -53,22 +69,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://kit.fontawesome.com/85a2f234d7.js " crossorigin="anonymous "></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-    $("#submit").click(function(){
-        var nama = $("#nama").val();
-        var username = $("#username").val();
-        var password = $("#password").val();
-
-        if(nama == '' || username == '' || password == ''){
-            alert("ada yang kosong");
-        }
-        else{
-            alert("Admin berhasil di tambahkan")
-        }
-
-    })
-    </script>
 
 </body>
 
