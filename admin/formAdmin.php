@@ -6,7 +6,12 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
 <div class="container">
     <h3>Tabel Admin</h3>
     <a href="formTambahAdmin.php">
-    <button type="button" class="btn btn-secondary">Tambah Admin</button></a>
+    <button type="button" class="btn btn-secondary">Tambah Admin</button></a> 
+    <form class="form-inline my-2 my-lg-0" method="GET" action="halaman_admin.php">
+      <input class="form-control mr-sm-2 mt-sm-1" type="text" name="cari" placeholder="cari" aria-label="cari">
+      <button class="btn btn-outline-primary my-2 my-sm-0 mt-sm-1" type="submit" value="cari">Cari</button>      
+    </form>
+    
     <table class="table mt-2" id="tabelAdmin">
         <thead>
             <tr>
@@ -30,7 +35,7 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
                 <a href=<?php echo'formUpdateAdmin.php?id=' . $r['id'] ?>>
                 <button type='button' class='btn btn-primary'> Ubah </button></a>
                 <a href=<?php echo 'DB_admin/DBDelete.php?id=' . $r['id'] ?>>
-                <button type='button' class='btn btn-danger'> Hapus </button></a>
+                <button type='button' id="hapus" class='btn btn-danger'> Hapus </button></a>
                 </td>            
                 </tr>
                 <?php
@@ -40,3 +45,12 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
         </tbody>
     </table>
 </div>
+
+<script>
+    $("#hapus").click(function(){
+        
+            alert("data admin di hapus")
+        
+
+    })
+    </script>

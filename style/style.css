@@ -15,17 +15,18 @@ html {
 body {
     /* background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
     /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
-    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    /*background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%); */
 }
 
 nav {
-    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    background: linear-gradient(90deg, #585ae9 0%, #552392 100%);
 }
 
 footer {
     /* background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%); */
     /* background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); */
     background-color: #130f40;
+    position: relative;
 }
 
 
@@ -54,6 +55,5 @@ footer {
 }
 
 #produkKami {
-    color: white;
+    color: black;
 }
-

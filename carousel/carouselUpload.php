@@ -39,12 +39,12 @@
                             </tr>
                             <tr>
                                 <td>Descriptions</td>
-                                <td><textarea name="desc" id="" cols="20" rows="3"></textarea></td>
+                                <td><textarea name="desc" id="text" cols="20" rows="3"></textarea></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="text-center">
-                                    <button type="submit" name="submit">submit</button>
+                                    <button type="submit" id="submit" name="submit">submit</button>
                                     </div>
                                     <a href="../admin/halaman_admin.php"><button type="button">gak jadi</button></a>
                                 </td>
@@ -66,6 +66,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://kit.fontawesome.com/85a2f234d7.js " crossorigin="anonymous "></script>
 
+    <script>
+    $("#submit").click(function(){
+            alert("Carousell berhasil di tambahkan")
+    })
+    </script>
 </body>
 
 </html>
