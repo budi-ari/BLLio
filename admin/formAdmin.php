@@ -62,7 +62,8 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
                     }
                     else{ ?>
                         <a href=<?php echo 'DB_admin/DBDelete.php?id=' . $r['id'] ?>>
-                        <button type='button' id='hapus' class='btn btn-danger'>Hapus</button> </a>
+                        <button onclick="return confirm('Hapus Admin?')" type='button' id='hapus' class='btn btn-danger'>Hapus</button> </a>
+                        
                     <?php
                     }
                     ?>

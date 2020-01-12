@@ -1,5 +1,7 @@
 <?php
 include "../db/config.php";
+$query = mysqli_query($con, "select count(id) as jumlah from admin");
+
 ?>
 
 <div class="container">
@@ -8,7 +10,9 @@ include "../db/config.php";
             <div class="card" style="width: 18rem;">
             <img src="../img/ubuntu.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-            <h3 class="card-text">Total Admin : orang</h3>
+            <h3 class="card-text">Total Admin : <?php 
+            $jumlah = mysqli_fetch_array($query);
+            echo $jumlah['jumlah'] ?> orang</h3>
             </div>
             </div>
         </div>
