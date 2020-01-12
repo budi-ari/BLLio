@@ -15,13 +15,14 @@ if (isset($_POST['submit'])) {
 
         if ($file_size < 200000 && ($file_type == 'image/jpeg' || $file_type == 'image/png')) {
             $nm_banner = $_POST['nm_banner'];
-            $desc = $_POST['desc'];
+            //$desc = $_POST['desc'];
             $sql = "insert into web_banner(nm_banner, image, size, type, isactive) 
             values('$nm_banner', '$file_name', '$file_size', '$file_type', '1') ";
             mysqli_query($con, $sql);
             move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_dir.$_FILES['gambar']['name']);
-            header("location:../admin/halaman_admin.php");
-            echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
+            //header("location:../admin/halaman_admin.php?page=carousel");
+            //echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
+            echo "<script>alert('Carousel Berhasil ditambahkan');window.location.href='../admin/halaman_admin.php?page=carousel'</script>";
         } else {
             echo '<span style="color:red"><b><u><i>Ukuruan File / Tipe File Tidak Sesuai</i></u></b></span>';
         }

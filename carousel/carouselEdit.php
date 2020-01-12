@@ -44,7 +44,7 @@
                     <img src="../img/banner/<?php echo $r['image'];?>" alt="slide <?php echo $no;?>" style="height: 100px">
                     </div>
                     <div class="text-center">
-                        <a href="../admin/halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
+                        <a href="../admin/halaman_admin.php?page=carousel"><button type="button" class="btn btn-danger">Batal</button></a>
                     </div>
                     <button type="submit" class="btn btn-primary">Ubah</button>
                 </form>

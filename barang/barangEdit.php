@@ -32,6 +32,9 @@
                         $r=mysqli_fetch_array($sql);
                     ?>
 
+                    <label for="gambar">Gambar</label> <br>
+                    <img src="../img/produk/<?php echo $r['image'];?>" alt="slide <?php echo $no;?>" style="height: 150px">
+                    <br>
                     <label for="sku">SKU</label>
                     <input type="text" name="sku" class="form-control" id="sku" value=<?php echo $r['sku'];?> readonly>
                     <label for="nama">Nama Produk</label>
@@ -45,11 +48,11 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Deskripsi</label>
-                        <textarea class="form-control" id="description" rows="3">value=<?php echo $r['description'];?></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="3"><?php echo $r['description'];?></textarea>
                     </div>
 
                     <div class="text-center">
-                        <a href="../admin/halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
+                        <a href="../admin/halaman_admin.php?page=barang"><button type="button" class="btn btn-danger">Batal</button></a>
                     </div>
                     <button type="submit" class="btn btn-primary">Ubah</button>
                 </form>

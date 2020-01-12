@@ -6,7 +6,8 @@ $ubah = mysqli_query($con, "Update admin set id = '$_POST[id]', nama = '$_POST[n
                             where id = '$_POST[id]'");
 
     if($ubah){
-        header('Location: ../halaman_admin.php');
+        //header('Location: ../halaman_admin.php?page=admin');
+        echo "<script>alert('Admin diubah');window.location.href='../halaman_admin.php?page=admin'</script>";
     } else{
         echo"Data gagal di simpan";
     }
