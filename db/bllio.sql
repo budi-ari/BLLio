@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Des 2019 pada 15.44
+-- Waktu pembuatan: 12 Jan 2020 pada 10.24
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.9
 
@@ -41,8 +41,15 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `nama`, `username`, `password`) VALUES
 (1, 'Budi', 'admin', 'asd'),
-(2, 'Feriyan', 'admin2', '123'),
-(3, 'Eko Pujianto', 'admin3', '456');
+(4, 'Eko', 'eko', 'eko'),
+(5, 'Feriyan', 'feriyan', 'feriyan'),
+(16, 'Asd', 'asd', 'asd'),
+(22, 'Dian', 'dian', 'dian'),
+(23, 'Rian', 'rian', 'rian'),
+(24, 'Eka', 'eka', 'eka'),
+(26, 'Admin', 'admin', 'admin'),
+(27, 'Ela', 'ela', 'ela'),
+(31, 'Doni', 'doni', 'doni');
 
 -- --------------------------------------------------------
 
@@ -127,13 +134,32 @@ CREATE TABLE `marketplace` (
 
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
-  `sku` int(11) NOT NULL,
+  `sku` varchar(25) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `size` int(11) NOT NULL,
+  `type` varchar(255) NOT NULL,
   `nm_product` varchar(25) NOT NULL,
   `brand` varchar(25) NOT NULL,
   `waranty` varchar(2) NOT NULL,
   `stock` int(7) NOT NULL,
   `description` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `product`
+--
+
+INSERT INTO `product` (`id`, `sku`, `image`, `size`, `type`, `nm_product`, `brand`, `waranty`, `stock`, `description`) VALUES
+(37, '17', 'cctv.jpg', 47667, 'image/jpeg', 'kamera cctv', 'vision', '6', 1, 'kamera ini'),
+(40, '5', 'lcd.jpg', 104832, 'image/jpeg', 'LCD Proyektor', 'Lenovo', '12', 4, 'LCD proyektor'),
+(41, '2', 'vakumLaptop.jpg', 78308, 'image/jpeg', 'Vakum', 'Taffware', '6', 5, 'Vakum laptop'),
+(42, '11', 'printer.jpg', 77607, 'image/jpeg', 'Printer', 'epson', '12', 2, 'Printer cap epson'),
+(44, '3', 'converterHDMI.jpg', 58227, 'image/jpeg', 'Converter HDMI', 'Lenovo', '3', 5, 'Converter untuk proyektor HDMI'),
+(45, '4', 'hdd.jpg', 25037, 'image/jpeg', 'Harddisk 320gb', 'WD Blue', '-', 4, 'HDD 320gb WD Blue'),
+(47, '6', 'headphone.jpg', 114560, 'image/jpeg', 'Headphone', 'Thornados', '1', 7, 'Headphone'),
+(48, '7', 'keyboard.jpg', 92920, 'image/jpeg', 'Keyboard', 'ROG', '3', 2, '-'),
+(51, '9', 'mouse.jpg', 44865, 'image/jpeg', 'Mouse', 'logitech', '1', 4, 'Mouse gaming'),
+(59, '14', 'microsd.jpg', 41329, 'image/jpeg', 'OTG', 'Sandisk', '1', 3, '-');
 
 -- --------------------------------------------------------
 
@@ -146,7 +172,7 @@ CREATE TABLE `web_banner` (
   `nm_banner` varchar(25) NOT NULL,
   `image` varchar(255) NOT NULL,
   `size` int(11) NOT NULL,
-  `type` varchar(25) NOT NULL,
+  `type` varchar(255) NOT NULL,
   `isactive` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -157,7 +183,9 @@ CREATE TABLE `web_banner` (
 INSERT INTO `web_banner` (`id`, `nm_banner`, `image`, `size`, `type`, `isactive`) VALUES
 (1, 'banner 1', 'carousel1.jpg', 91052, 'image/jpeg', 1),
 (2, 'banner 2', 'carousel2.jpg', 152900, 'image/jpeg', 1),
-(3, 'banner 3', 'carousel3.jpg', 130908, 'image/jpeg', 1);
+(3, 'banner 3', 'carousel3.jpg', 130908, 'image/jpeg', 1),
+(6, 'Gambar 2', 'Dari-COD-hingga-PCB--Yuk-Pahami-10-Istilah-yang-Sering-Digunakan-Dalam-Kegiatan-Jual-Beli-Online-master-1095132970.jpg', 23979, 'image/jpeg', 1),
+(13, 'asd', 'download3.jpg', 9940, 'image/jpeg', 1);
 
 --
 -- Indexes for dumped tables
@@ -232,7 +260,7 @@ ALTER TABLE `web_banner`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT untuk tabel `cs_order`
@@ -262,13 +290,13 @@ ALTER TABLE `marketplace`
 -- AUTO_INCREMENT untuk tabel `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT untuk tabel `web_banner`
 --
 ALTER TABLE `web_banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

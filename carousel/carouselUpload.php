@@ -29,24 +29,20 @@
                         <table>
                             <tr>
                                 <td>Nama</td>
-                                <td> <input type="text" placeholder="isikan nama Carousel" name="nm_banner"/> </td>
+                                <td> <input type="text" required placeholder="isikan nama Carousel" name="nm_banner"/> </td>
                             </tr>
                             <tr>
                                 <td>Pilih Gambar</td>
                                 <td> <input type="file" name="gambar"/> 
-                                <small>Ukuran ideal 1110x450</small>
+                                <small>Ukuran ideal 1110x450</small>    
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>Descriptions</td>
-                                <td><textarea name="desc" id="text" cols="20" rows="3"></textarea></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="text-center">
                                     <button type="submit" id="submit" name="submit">submit</button>
                                     </div>
-                                    <a href="../admin/halaman_admin.php"><button type="button">gak jadi</button></a>
+                                    <a href="../admin/halaman_admin.php?page=carousel"><button type="button">Batal</button></a>
                                 </td>
                             </tr>
                         </table>
@@ -65,12 +61,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://kit.fontawesome.com/85a2f234d7.js " crossorigin="anonymous "></script>
-
-    <script>
-    $("#submit").click(function(){
-            alert("Carousell berhasil di tambahkan")
-    })
-    </script>
 </body>
 
 </html>

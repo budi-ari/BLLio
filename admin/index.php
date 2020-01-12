@@ -27,12 +27,12 @@
                     <h3 class="text-center">
                     <img src="../img/bllio.png" alt="logo-bllio" style="width:130px;"></h3>
                     <label for="exampleInputEmail1">Username</label>
-                    <input type="text" name="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
+                    <input type="text" required name="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
                     <small id="emailHelp" class="form-text text-muted">Pastikan Username Anda Benar!</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" required name="password" class="form-control" id="password" placeholder="Password">
                     </div>
                     <button type="submit" id="submit" class="btn btn-primary">Login</button>
                 </form>
@@ -54,12 +54,6 @@
     $("#submit").click(function(){
         var username = $("#username").val();
         var password = $("#password").val();
-        if(username == '' || password == ''){
-            alert("username atau password salah");
-        }
-        else{
-            alert("berhasil login")
-        }
     })
     </script>
 </body>

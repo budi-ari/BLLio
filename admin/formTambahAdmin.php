@@ -26,17 +26,17 @@
                     <div class="form-group">
                     <h3 class="text-center"> Tambah Admin</h3>
                     <label for="nama">Nama</label>
-                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama">
+                    <input type="text" name="nama" required class="form-control" id="nama" placeholder="Nama">
                     <label for="username">Username</label>
-                    <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                    <input type="text" name="username" required class="form-control" id="username" placeholder="Username">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" name="password" required class="form-control" id="password" placeholder="Password">
                         <small id="emailHelp" class="form-text text-muted">Jangan Lupakan Password Anda!</small>
                     </div>
                     <div class="text-center">
-                        <a href="halaman_admin.php"><button type="button" class="btn btn-danger">Batal</button></a>
+                        <a href="halaman_admin.php?page=admin"><button type="button" class="btn btn-danger">Batal</button></a>
                     </div>
                     <button type="submit" id="submit" class="btn btn-primary">Tambah</button>
                 </form>
