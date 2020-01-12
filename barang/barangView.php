@@ -49,7 +49,7 @@ $tampilBarang = mysqli_query($con, "Select * from product");
                 <tr>
                 <td>$no</td>";?>
                 <td class="text-center"> 
-                    <img src="../img/produk/<?php echo $r['image'];?>" alt="gambar <?php echo $no;?>" style="width:50px">
+                    <img src="../img/produk/<?php echo $r['image'];?>" alt="gambar <?php echo $no;?>" width="60px">
                 </td>
                 <td class="text-center"><?php echo $r['sku'] ?></td>
                 <td class="text-left"><?php echo $r['nm_product'] ?></td>
@@ -63,7 +63,7 @@ $tampilBarang = mysqli_query($con, "Select * from product");
                 </td>
                 <td class="text-left">
                 <a href=<?php echo '../barang/barangDelete.php?id=' . $r['id'] ?>>
-                <button type='button' class='btn btn-danger'> Hapus </button></a>
+                <button onclick="return confirm('Hapus Barang?')" type='button' class='btn btn-danger'> Hapus </button></a>
                 </td>            
                 </tr>
                 <?php

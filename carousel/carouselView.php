@@ -48,7 +48,7 @@ $tampilCarousel = mysqli_query($con, "Select * from web_banner");
                 </td>
                 <td class="text-left">
                 <a href=<?php echo '../carousel/carouselDelete.php?id=' . $r['id'] ?>>
-                <button type='button' class='btn btn-danger'> Hapus </button></a>
+                <button onclick="return confirm('Hapus Carousel?')" type='button' class='btn btn-danger'> Hapus </button></a>
                 </td>            
                 </tr>
                 <?php
