@@ -6,7 +6,7 @@ $tampilCarousel = mysqli_query($con, "Select * from web_banner");
 <div class="container">
     <h3>Tabel Carousel</h3>
     <a href="../carousel/carouselUpload.php">
-    <button type="button" class="btn btn-secondary">Tambah Carousel</button></a>
+    <button type="button" class="btn btn-secondary"><i class="fas fa-plus-square mr-2"></i>Tambah Carousel</button></a>
     <!-- <form class="form-inline my-2 my-lg-0" method="GET" action="">
       <input class="form-control mr-sm-2 mt-sm-1" type="text" name="cari" placeholder="cari" aria-label="cari">
       <button class="btn btn-outline-primary my-2 my-sm-0 mt-sm-1" type="submit" id="cari">Cari</button>      
@@ -44,11 +44,11 @@ $tampilCarousel = mysqli_query($con, "Select * from web_banner");
                 </td>
                 <td class="text-center">
                 <a href=<?php echo'../carousel/carouselEdit.php?id=' . $r['id'] ?>>
-                <button type='button' class='btn btn-primary'> Ubah </button></a>
+                <button type='button' class='btn btn-primary'><i class="fas fa-edit"></i></button></a>
                 </td>
                 <td class="text-left">
                 <a href=<?php echo '../carousel/carouselDelete.php?id=' . $r['id'] ?>>
-                <button onclick="return confirm('Hapus Carousel?')" type='button' class='btn btn-danger'> Hapus </button></a>
+                <button onclick="return confirm('Hapus Carousel?')" type='button' class='btn btn-danger'><i class="fas fa-trash-alt"></i></button></a>
                 </td>            
                 </tr>
                 <?php

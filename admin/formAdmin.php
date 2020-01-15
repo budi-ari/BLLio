@@ -6,7 +6,7 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
 <div class="container">
     <h3>Tabel Admin</h3>
     <a href="formTambahAdmin.php">
-    <button type="button" class="btn btn-secondary">Tambah Admin</button></a> 
+    <button type="button" class="btn btn-secondary"><i class="fas fa-user-plus mr-2"></i>Tambah Admin</button></a> 
     <form class="form-inline my-2 my-lg-0" method="POST" action="halaman_admin.php?page=admin">
       <input class="form-control mr-sm-2 mt-sm-1" type="text" name="key" placeholder="Cari Admin" aria-label="cari">
       <button class="btn btn-outline-primary my-2 my-sm-0 mt-sm-1" type="submit" name="cariAdmin" value="cari">Cari</button>      
@@ -52,7 +52,8 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
                     <td class="text-center"><?php echo $r['username'] ?></td>
                     <td class="text-center">
                     <a href=<?php echo'formUpdateAdmin.php?id=' . $r['id'] ?>>
-                    <button type='button' class='btn btn-primary'> Ubah </button></a>
+                    <button type='button' class='btn btn-primary'><i class="fas fa-user-edit"></i></button></a>
+                    
                     </td>
                     <td class="text-left">
                     <a>
@@ -62,7 +63,8 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
                     }
                     else{ ?>
                         <a href=<?php echo 'DB_admin/DBDelete.php?id=' . $r['id'] ?>>
-                        <button onclick="return confirm('Hapus Admin?')" type='button' id='hapus' class='btn btn-danger'>Hapus</button> </a>
+                        <button onclick="return confirm('Hapus Admin?')" type='button' id='hapus' class='btn btn-danger'>
+                        <i class="fas fa-trash-alt"></i></button> </a>
                         
                     <?php
                     }
@@ -86,3 +88,4 @@ $tampilAdmin = mysqli_query($con, "Select * from admin");
     <?php } ?>
   </ul>
 </div>
+

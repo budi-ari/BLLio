@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BLLio-admin</title>
-    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="../img/icon/favicon-32x32.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
@@ -20,7 +20,7 @@
    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:lightgray" >
         <div class="container">
             <a class="navbar-brand font-weight-bold" href="halaman_admin.php">
-                <img src="../img/bllio.png" alt="logo-bllio" style="width:100px;"></a>
+                <img src="../img/icon/bllio.png" alt="logo-bllio" style="width:100px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

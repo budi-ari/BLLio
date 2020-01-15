@@ -6,7 +6,7 @@ $tampilBarang = mysqli_query($con, "Select * from product");
 <div class="container">
     <h3>Tabel Barang</h3>
     <a href="../barang/barangInsert.php">
-    <button type="button" class="btn btn-secondary">Tambah Barang</button></a>
+    <button type="button" class="btn btn-secondary"><i class="fas fa-plus-square mr-2"></i>Tambah Barang</button></a>
     <form class="form-inline my-2 my-lg-0" method="POST" action="halaman_admin.php?page=barang">
       <input class="form-control mr-sm-2 mt-sm-1" type="text" name="key" placeholder="Cari Barang" aria-label="cari">
       <button class="btn btn-outline-primary my-2 my-sm-0 mt-sm-1" type="submit" name="cariAdmin" value="cari">Cari</button>      
@@ -59,11 +59,11 @@ $tampilBarang = mysqli_query($con, "Select * from product");
                 <td class="text-left"><?php echo $r['description'] ?></td>
                 <td class="text-right">
                 <a href=<?php echo'../barang/barangEdit.php?id=' . $r['id'] ?>>
-                <button type='button' class='btn btn-primary'> Ubah </button></a>
+                <button type='button' class='btn btn-primary'><i class="fas fa-edit"></i></button></a>
                 </td>
                 <td class="text-left">
                 <a href=<?php echo '../barang/barangDelete.php?id=' . $r['id'] ?>>
-                <button onclick="return confirm('Hapus Barang?')" type='button' class='btn btn-danger'> Hapus </button></a>
+                <button onclick="return confirm('Hapus Barang?')" type='button' class='btn btn-danger'><i class="fas fa-trash-alt"></i></button></a>
                 </td>            
                 </tr>
                 <?php

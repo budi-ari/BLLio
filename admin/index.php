@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BLLio-admin</title>
-    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
+    <link rel="shortcut icon" href="../img/icon/favicon-32x32.png" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +25,7 @@
                 <form class="form-container" action="DBLogin.php" method="POST">
                     <div class="form-group">
                     <h3 class="text-center">
-                    <img src="../img/bllio.png" alt="logo-bllio" style="width:130px;"></h3>
+                    <img src="../img/icon/bllio.png" alt="logo-bllio" style="width:130px;"></h3>
                     <label for="exampleInputEmail1">Username</label>
                     <input type="text" required name="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
                     <small id="emailHelp" class="form-text text-muted">Pastikan Username Anda Benar!</small>
