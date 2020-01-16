@@ -59,12 +59,13 @@
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                     <div class="list-group list-group-flush p-1 pt-2">    
-                        <a href="../index.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Lihat Tampilan User</a>
+                        <a href="../index2.php" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Lihat Tampilan User</a>
                         <a href="halaman_admin.php?page=admin" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Admin</a>
                         <a href="halaman_admin.php?page=barang" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Barang</a>
-                        <!-- <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Kategori</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Gambar</a> -->
                         <a href="halaman_admin.php?page=carousel" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Carousoll</a>
+                        <!-- <a href="halaman_admin.php?page=bantuan" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Pusat Bantuan</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Gambar</a> -->
+
                         
                     </div>   
                 </div>
@@ -87,7 +88,7 @@
                         break;
                     case 'barang':
                         include "../barang/barangView.php";
-                        break;			
+                        break;
                     default:
                         echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
                         break;
